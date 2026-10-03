@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Alienware Lighting
+Comment=Set the case lighting color
+Icon=preferences-color
+Exec=alienware-lighting
+Terminal=false
+Categories=Utility;Settings;
+Keywords=rgb;led;lighting;alienware;color;
