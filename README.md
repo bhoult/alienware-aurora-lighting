@@ -1,5 +1,7 @@
 # Alienware Aurora ACT1250 lighting on Linux
 
+Made by Claude Opus 5.5, instigated by [Brandon Hoult](https://hoult.co).
+
 A small GTK 4 app and command-line tool for the case lighting on the Alienware Aurora ACT1250 (2025): the front vent ring, the alien-head power button, the rear fan and the CPU cooler ring. It talks to the AW-ELC lighting controller (USB `187c:0550`) directly over hidraw. It needs no AWCC and no OpenRGB, and after a one-time udev rule it needs no root.
 
 - Solid colors, a rainbow, random colors, and an animated color cycle and color wave. The animations run on the controller itself, so they keep going with the app closed.
@@ -72,7 +74,6 @@ Ubuntu's OpenRGB 0.9 package crashes on this controller: a stack buffer overflow
 - Protocol: OpenRGB's [AlienwareController](https://gitlab.com/CalcProgrammer1/OpenRGB/-/tree/master/Controllers/AlienwareController) by Gabriel Marcano, building on kmescher's reverse engineering in [trackmastersteve/alienfx#41](https://github.com/trackmastersteve/alienfx/issues/41#issuecomment-465388185).
 - Program limits, the success byte and gamma: [OpenRGB issue #5822](https://gitlab.com/CalcProgrammer1/OpenRGB/-/work_items/5822), from an Area-51 owner.
 - Zone map: [alienfx-tools #631](https://github.com/T-Troll/alienfx-tools/issues/631) and the Aurora R16 map in [alienfx-tools #556](https://github.com/T-Troll/alienfx-tools/issues/556).
-- Written with [Claude Code](https://claude.com/claude-code).
 
 ## License
 
